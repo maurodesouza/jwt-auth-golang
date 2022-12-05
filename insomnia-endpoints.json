@@ -1,0 +1,159 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-12-05T01:10:13.893Z",
+    "__export_source": "insomnia.desktop.app:v2022.6.0",
+    "resources": [
+        {
+            "_id": "req_07d223cf7e11486cb41eae42ea163bda",
+            "parentId": "wrk_ffe2c8668d9f4378aa52ec7d8266a133",
+            "modified": 1670200168758,
+            "created": 1670197511244,
+            "url": "{{ _.base }}/validate",
+            "name": "Validate",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "{{ _.token }}",
+                "disabled": false
+            },
+            "metaSortKey": -1670197511244,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_ffe2c8668d9f4378aa52ec7d8266a133",
+            "parentId": null,
+            "modified": 1670129885378,
+            "created": 1670129885378,
+            "name": "JWT Auth Golang",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_1e915ef81d564e74b36e7d0efe48a7c3",
+            "parentId": "fld_6b9688834e7a430dad1671a893969442",
+            "modified": 1670130610105,
+            "created": 1670129909826,
+            "url": "{{ _.base }}/signup",
+            "name": "Sign Up",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"test@test.com\",\n\t\"password\": \"123456\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1664123130497.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_6b9688834e7a430dad1671a893969442",
+            "parentId": "wrk_ffe2c8668d9f4378aa52ec7d8266a133",
+            "modified": 1670130602101,
+            "created": 1670130602101,
+            "name": "User",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1670130602101,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_20550f72bbea4397bf33d62f5a3438b3",
+            "parentId": "fld_6b9688834e7a430dad1671a893969442",
+            "modified": 1670197565964,
+            "created": 1670130588504,
+            "url": "{{ _.base }}/signin",
+            "name": "Sign In",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"test@test.com\",\n\t\"password\": \"123456\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1664123130447.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_daa5110393612b54364b413d74131eaedf8d0088",
+            "parentId": "wrk_ffe2c8668d9f4378aa52ec7d8266a133",
+            "modified": 1670199162387,
+            "created": 1670129885383,
+            "name": "Base Environment",
+            "data": {
+                "base": "http://localhost:3333",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzI3ODk1NjYsInN1YiI6M30.9x_yyvfPzl9Fg0mA69QYaICdueJSkV4lOtIraMALFMM"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "base",
+                    "token"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1670129885383,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_daa5110393612b54364b413d74131eaedf8d0088",
+            "parentId": "wrk_ffe2c8668d9f4378aa52ec7d8266a133",
+            "modified": 1670129885384,
+            "created": 1670129885384,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_d3a296527aa241209da73109a2d67526",
+            "parentId": "wrk_ffe2c8668d9f4378aa52ec7d8266a133",
+            "modified": 1670129885380,
+            "created": 1670129885380,
+            "fileName": "JWT Auth Golang",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}

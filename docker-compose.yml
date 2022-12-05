@@ -1,0 +1,22 @@
+version: '3'
+
+name: "jwt-auth-golang"
+
+services:
+  server:
+    build: .
+    ports:
+      - "3333:3333"
+    volumes:
+      - .:/app
+  db:
+    image: postgres
+    restart: always
+    tty: true
+    volumes:
+      - .pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=jwt-auth
+    ports:
+      - "5432:5432"
