@@ -1,4 +1,8 @@
-<h1 align="center">Jwt Auth Golang</h1>
+<div align="center" id="top">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHjCk6UZcI7oOKwRGI-q5spXGReEucDFnOZA&usqp=CAU" width="900" alt="Go Lang with JWT" />
+</div>
+
+<h1 align="center">JWT Auth Golang</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/maurodesouza/jwt-auth-golang?color=56BEB8">
@@ -19,11 +23,11 @@
   <a href="https://github.com/maurodesouza" target="_blank">Author</a>
 </p>
 
-<br>
-
 ## :dart: About ##
 
-I create this project to improve my go lang skills, I had a little help from Robby with amazing this [tutorial](https://www.youtube.com/watch?v=ma7rUS_vW9M), thanks Robby ❤
+I create this project to improve my go lang skills, I had a little help from Robby with amazing this [tutorial](https://www.youtube.com/watch?v=ma7rUS_vW9M)!
+
+Thanks Robby ❤
 
 ## :rocket: Main Technologies ##
 
